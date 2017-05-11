@@ -1,0 +1,7 @@
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.input :ingredient, collection: (?), as: :radio_buttons, checked: 3 %>
+  <%= f.input :dose %>
+  <%= f.submit "Send my cocktail", class: "btn btn-primary" %>
+<% end %>

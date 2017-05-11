@@ -1,0 +1,11 @@
+<div class="text-center">
+<h2>Welcome in Mr Cocktail ! </h2>
+
+<% @cocktail.each do |cocktail| %>
+  <h3>
+    <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  </h3>
+<% end %>
+
+<%= link_to "Create", new_cocktail_path, class: "button btn-success" %>
+</div>
